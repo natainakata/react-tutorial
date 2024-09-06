@@ -10,6 +10,12 @@
       "name": "localhost に対して Chrome を起動する",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "vite-preview",
+      "url": "http://localhost:5173"
     }
   ]
 }
