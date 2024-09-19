@@ -1,0 +1,64 @@
+.app {
+  text-align: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--toggle-bg-color);
+  color: var(--toggle-text-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle.light {
+  --toggle-bg-color: #fff;
+  --toggle-text-color: #333;
+}
+
+.theme-toggle.dark {
+  --toggle-bg-color: #333;
+  --toggle-text-color: #fff;
+}
+
+.theme-toggle-slider {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-slider:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--toggle-text-color);
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle.dark .theme-toggle-slider {
+  background-color: #666;
+}
+
+.theme-toggle.dark .theme-toggle-slider:before {
+  transform: translateX(20px);
+}
