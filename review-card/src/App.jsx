@@ -1,5 +1,6 @@
 import React from "react";
 import ReviewCard from "./ReviewCard";
+import "./App.css";
 
 function App() {
   const reviews = [
